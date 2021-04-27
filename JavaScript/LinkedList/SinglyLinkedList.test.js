@@ -6,8 +6,7 @@ describe("linkedlist", () => {
     list = new LinkedList();
   });
 
-  it("is empty", () => {
-    expect(list.isEmpty()).toBeTruthy();
-    expect(list.size()).toBe(0);
+  it("insert element to linkedlist", () => {
+    expect(list.append(0)).toBeTruthy;
   });
 });
