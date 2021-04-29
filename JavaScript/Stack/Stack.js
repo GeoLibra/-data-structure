@@ -34,7 +34,7 @@ export default class StackBasedLinkedList {
     if (this.top !== null) {
       let temp = this.top
       while (temp !== null) {
-        nodes.push(temp)
+        nodes.push(temp.element)
         temp = temp.next
       }
     }
@@ -42,6 +42,6 @@ export default class StackBasedLinkedList {
   }
 
   toString() {
-    return this.toArray().map((node) => node.element).toString();
+    return this.toArray().toString();
   }
 }
